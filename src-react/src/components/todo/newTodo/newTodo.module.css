@@ -1,0 +1,35 @@
+.Body {
+    margin: 5px 24px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.FormGrid {
+    width: 80%;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 20px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+
+.FormControl {
+    margin-left: 10px;
+    width: 80px;
+}
+
+.ImportanceLabel {
+    width: 50px;
+}
+
+.TodoLabel {
+    width: 100%;
+}
+
+.UpperContent{
+    display: flex;
+    flex-flow: row;
+}
+
+.SubmitButton {
+    margin-top: 10px;
+}
