@@ -51,7 +51,8 @@ dependencies {
     /**
     * DB
     */
-    implementation "com.h2database:h2:$h2_version"
+    // implementation "com.h2database:h2:$h2_version"
+    implementation "org.postgresql:postgresql:$postgresql_version"
     /**
     * koin
     */

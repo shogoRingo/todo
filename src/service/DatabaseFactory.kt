@@ -20,9 +20,11 @@ interface DatabaseFactory {
 object DatabaseFactoryImpl: DatabaseFactory {
 
     override fun create(): DataSource {
-        val config = HikariConfig().apply { 
-            driverClassName = "org.h2.Driver"
-            jdbcUrl = "jdbc:h2:mem:test"
+        val config = HikariConfig().apply {
+            driverClassName = "org.postgresql.Driver"
+            jdbcUrl = "jdbc:postgresql://localhost:15432/todo"
+            username = "shogoRingo"
+            password = "password"
             maximumPoolSize = 3
             isAutoCommit = false
             transactionIsolation = "TRANSACTION_REPEATABLE_READ"
